@@ -164,7 +164,8 @@ par(mfrow = c(2,1), mar = c(5.1, 5.1, 2, 2.1))
 plot(function(x){BFB(x)},
      xlim = rev(c(0.001, 1)), xlab = "", ylab = "",
      xaxt = "n", yaxt = "n",
-     lwd = 2, main = ""); abline(v = max_value, col = "grey")
+     lwd = 2, main = "")
+abline(v = max_value, col = "grey")
 mtext("p-Value", side = 1, line = 3, font = 2)
 mtext("Bayes Factor Bound", side = 2, line = 3, font = 2)
 axis(1, at = seq(0, 1, 0.1))

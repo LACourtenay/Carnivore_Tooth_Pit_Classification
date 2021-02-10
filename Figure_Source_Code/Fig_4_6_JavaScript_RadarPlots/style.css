@@ -1,0 +1,72 @@
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+#african_plot {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    padding: 15;
+    margin: 20;
+    width: 700;
+    height: 700;
+}
+#european_plot {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    padding: 15;
+    margin: 20;
+    width: 700;
+    height: 700;
+}
+#family_plot {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    padding: 15;
+    margin: 20;
+    width: 700;
+    height: 700;
+}
+#felids_plot {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    padding: 15;
+    margin: 20;
+    width: 700;
+    height: 700;
+}
+#canids_plot {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    padding: 15;
+    margin: 20;
+    width: 700;
+    height: 700;
+}
+#overall_plot {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    padding: 15;
+    margin: 20;
+    width: 700;
+    height: 700;
+}
+
+#loss_plot {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    padding: 15;
+    margin: 20;
+    width: 950;
+    height: 500;
+}

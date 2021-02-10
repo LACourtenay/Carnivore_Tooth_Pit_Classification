@@ -3,6 +3,7 @@
 
 # Necessary libraries -----------------------------
 
+# Package for data visualization
 library(ggplot2)
 library(gridExtra)
 

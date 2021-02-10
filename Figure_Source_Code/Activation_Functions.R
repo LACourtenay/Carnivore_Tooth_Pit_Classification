@@ -1,6 +1,6 @@
 # R Code by Lloyd A. Courtenay. Last Updated 10/02/2021
 
-# Activation Functions and their Derivatives ---------------------
+# Activation Functions and their Derivatives ------------------------------
 
 # ReLU
 
@@ -44,7 +44,7 @@ print(swish_d2)
 
 #
 
-# Base R Plot -------------------------
+# Base R Plot ------------------------------
 
 par(mfrow = c(1,3), mar = c(5.1, 5, 4.1, 2.))
 
@@ -90,7 +90,7 @@ par(mfrow = c(1,1), mar = c(5.1, 4.1, 4.1, 2.1))
 
 #
 
-# Alternative GGPlot Option ----------------
+# Alternative GGPlot Option ------------------------------
 
 library(ggplot2)
 library(gridExtra)

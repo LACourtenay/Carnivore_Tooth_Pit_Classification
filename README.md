@@ -62,10 +62,6 @@ Please cite this repository as:
 
 --------------------------------------------------------
 
-This code was designed and prepared for the study by:
-<b> Yravedra, J.; Maté-González, M.Á.; Courtenay, L.A.; González-Aguilera, D. (2019) The use of canid tooth marks on bone for the identification of livestock predation. DOI: 10.1038/s41598-019-52807-0 </b>
-
-------------------------------------------------------------
 Comments, questions, doubts, suggestions and corrections can all be directed to L. A. Courtenay at the email provided above.
 Science should be a collaborative effort. Archaeology is no exception to this. If any fellow data
 scientist wishes to improve, contribute, update, report issues or help with this work, please do not hesitate to contact the corresponding author.

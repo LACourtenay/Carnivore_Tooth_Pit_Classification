@@ -49,6 +49,9 @@ The present repository contains:
         * Python code explaining how to load these weights
 * <b> Unsupervised_Comp_Learning_Codes </b>
 
+<b> IMPORTANT NOTE: </b> TensorFlow 2.3 or higher is needed for NSVM
+
+Code for GAN implementations cited in the text can be found in the same author's repository titled GMM_Generative_Adversarial_Networks : https://github.com/LACourtenay/GMM_Generative_Adversarial_Networks
 
 --------------------------------------------------------
 

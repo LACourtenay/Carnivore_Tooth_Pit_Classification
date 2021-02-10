@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Amcharts Error Plot</title>
+        <style>
+          #chartdiv {
+            width: 1500px;
+            height: 600px;
+            margin: 50px;
+          }
+        </style>
+        <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    </head>
+    <body>
+
+        <script>
+            am4core.ready(function() {
+
+                am4core.useTheme(am4themes_animated);
+                var chart = am4core.create("chartdiv", am4charts.XYChart);
+
+                chart.data = [{
+                  "x": 1,
+                  "y": 0.41,
+                  "errorY": 0.18
+                }, {
+                  "x": 2,
+                  "y": 0.42,
+                  "errorY": 0.15
+                }, {
+                  "x": 3,
+                  "y": 0.5,
+                  "errorY": 0.07
+                }, {
+                  "x": 4,
+                  "y": 0.65,
+                  "errorY": 0.03
+                }, {
+                  "x": 5,
+                  "y": 0.49,
+                  "errorY": 0.12
+                }, {
+                  "x": 6,
+                  "y": 0.38,
+                  "errorY": 0.18
+                }, {
+                  "x": 7,
+                  "y": 0.31,
+                  "errorY": 0.12
+                }, {
+                  "x": 10,
+                  "y": 0.32,
+                  "errorY": 0.16
+                }, {
+                  "x": 11,
+                  "y": 0.42,
+                  "errorY": 0.15
+                }, {
+                  "x": 12,
+                  "y": 0.7,
+                  "errorY": 0.06
+                }, {
+                  "x": 13,
+                  "y": 0.61,
+                  "errorY": 0.07
+                }, {
+                  "x": 14,
+                  "y": 0.51,
+                  "errorY": 0.14
+                }, {
+                  "x": 17,
+                  "y": 0.58,
+                  "errorY": 0.1
+                }, {
+                  "x": 18,
+                  "y": 0.72,
+                  "errorY": 0.12
+                }, {
+                  "x": 19,
+                  "y": 0.86,
+                  "errorY": 0.08
+                }, {
+                  "x": 20,
+                  "y": 0.62,
+                  "errorY": 0.17
+                }, {
+                  "x": 21,
+                  "y": 0.56,
+                  "errorY": 0.17
+                }, {
+                  "x": 22,
+                  "y": 0.30,
+                  "errorY": 0.14
+                }, {
+                  "x": 25,
+                  "y": 0.63,
+                  "errorY": 0.12
+                }, {
+                  "x": 26,
+                  "y": 0.71,
+                  "errorY": 0.08
+                }, {
+                  "x": 27,
+                  "y": 0.84,
+                  "errorY": 0.07
+                }, {
+                  "x": 28,
+                  "y": 0.65,
+                  "errorY": 0.16
+                }, {
+                  "x": 29,
+                  "y": 0.54,
+                  "errorY": 0.17
+                }, {
+                  "x": 30,
+                  "y": 0.65,
+                  "errorY": 0.13
+                }, {
+                  "x": 33,
+                  "y": 0.51,
+                  "errorY": 0.1
+                }, {
+                  "x": 34,
+                  "y": 0.62,
+                  "errorY": 0.1
+                }, {
+                  "x": 35,
+                  "y": 0.8,
+                  "errorY": 0.07
+                }, {
+                  "x": 36,
+                  "y": 0.49,
+                  "errorY": 0.14
+                }, {
+                  "x": 37,
+                  "y": 0.47,
+                  "errorY": 0.15
+                }, {
+                  "x": 40,
+                  "y": 0.46,
+                  "errorY": 0.13
+                }, {
+                  "x": 41,
+                  "y": 0.73,
+                  "errorY": 0.1
+                }, {
+                  "x": 44,
+                  "y": 0.42,
+                  "errorY": 0.21
+                }, {
+                  "x": 45,
+                  "y": 0.55,
+                  "errorY": 0.1
+                }, {
+                  "x": 46,
+                  "y": 0.77,
+                  "errorY": 0.03
+                }, {
+                  "x": 47,
+                  "y": 0.57,
+                  "errorY": 0.05
+                }, {
+                  "x": 48,
+                  "y": 0.48,
+                  "errorY": 0.09
+                }];
+
+                chart.padding(40, 40, 40, 40);
+
+                var valueAxisX = chart.xAxes.push(new am4charts.ValueAxis());
+                var valueAxisY = chart.yAxes.push(new am4charts.ValueAxis());
+
+                valueAxisY.min = 0.15;
+                valueAxisY.max = 0.94;
+                valueAxisY.strictMinMax = true;
+                valueAxisY.title.text = "Bone Mineral Density";
+                valueAxisY.title.fontWeight = "bold";
+                valueAxisY.title.fontSize = 30;
+                valueAxisY.title.paddingBottom = 20;
+                valueAxisY.renderer.labels.template.fontSize = 25;
+
+                valueAxisX.title.text = "Anatomical Element";
+                valueAxisX.title.fontWeight = "bold";
+                valueAxisX.title.fontSize = 30;
+                valueAxisX.renderer.grid.template.strokeOpacity = 0;
+                valueAxisX.renderer.baseGrid.disabled = true;
+                valueAxisX.renderer.labels.template.fontSize = 0;
+
+                var series = chart.series.push(new am4charts.LineSeries());
+                series.dataFields.valueX = "x";
+                series.dataFields.valueY = "y";
+                series.strokeOpacity = 0;
+
+                var errorBulletY = series.bullets.create(am4charts.ErrorBullet);
+                errorBulletY.isDynamic = true;
+                errorBulletY.strokeWidth = 3;
+                errorBulletY.tooltipText = "Mean {valueY.value}, SD {errorY}";
+                errorBulletY.stroke = am4core.color("Black");
+
+                errorBulletY.adapter.add("pixelHeight", function (pixelHeight, target) {
+                    var dataItem = target.dataItem;
+                    if(dataItem) {
+                        var value = dataItem.valueY;
+                        var errorTopValue = value + dataItem.dataContext.errorY / 2;
+                        var errorTopY = valueAxisY.valueToPoint(errorTopValue).y;
+
+                        var errorBottomValue = value - dataItem.dataContext.errorY / 2;
+                        var errorBottomY = valueAxisY.valueToPoint(errorBottomValue).y;
+
+                        return Math.abs(errorTopY - errorBottomY);
+                    }
+                    return pixelHeight;
+                })
+
+                var circle = errorBulletY.createChild(am4core.Circle);
+                circle.radius = 5;
+                circle.fill = am4core.color("#ffffff");
+
+                var range = valueAxisY.axisRanges.create();
+                range.value = 0.5;
+                range.endValue = 0.76;
+                range.axisFill.fill = am4core.color("red");
+                range.axisFill.fillOpacity = 0.1;
+                range.grid.disabled = true;
+
+                function createRange(from, to, label) {
+                  var range = valueAxisX.axisRanges.create();
+                  range.value = from;
+                  range.endValue = to;
+                  range.label.text = label;
+                  range.label.paddingBottom = 40;
+                  range.label.location = 0.5;
+                  range.label.horizontalCenter = "middle";
+                  //range.label.fontWeight = "bold";
+                  range.grid.disabled = true;
+                  //range.grid.strokeOpacity = 1;
+                  range.label.fontSize = 25;
+                }
+
+                createRange(0.5, 8.5, "Femur");
+                createRange(8.5, 15.5, "Humerus");
+                createRange(15.5, 23.5, "Metacarpal");
+                createRange(23.5, 31.5, "Metatarsal");
+                createRange(31.5, 37.5, "Radius");
+                createRange(37.5, 41.5, "Ulna");
+                createRange(41.5, 49.5, "Tibia");
+
+                valueAxisX.min = -1;
+                valueAxisX.max = 50;
+                valueAxisX.strictMinMax = true;
+
+                chart.cursor = new am4charts.XYCursor();
+                chart.cursor.behavior = "zoomXY";
+
+                chart.exporting.menu = new am4core.ExportMenu();
+
+            })
+        </script>
+
+        <div id = "chartdiv"></div>
+
+
+    </body>
+</html>

@@ -1,3 +1,5 @@
+# R Code by Lloyd A. Courtenay. Last Updated 10/02/2021
+
 # Activation Functions and their Derivatives ---------------------
 
 # ReLU
@@ -24,6 +26,8 @@ swish_d2<-function(x) {}
 body(swish_d1) <- D(body(swish), "x")
 body(swish_d2) <- D(body(swish_d1), "x")
 
+#
+
 # Print Derivative Formulae ------------------------------
 
 # ReLU
@@ -37,6 +41,8 @@ print(sigmoid_d2)
 # Swish
 print(swish_d1)
 print(swish_d2)
+
+#
 
 # Base R Plot -------------------------
 
@@ -82,6 +88,8 @@ plot(function(x){swish_d2(x)}, from = -7, to = 7,
 
 par(mfrow = c(1,1), mar = c(5.1, 4.1, 4.1, 2.1))
 
+#
+
 # Alternative GGPlot Option ----------------
 
 library(ggplot2)
@@ -124,3 +132,5 @@ plot_line_width = 1.25; plot_margin_values = c(0,0.5,0,0); plot_theme<-theme_bw(
         plot.title = element_text(margin = margin(t = 15, b = 15),
                                   size = 20, face = "bold"),
         plot.margin = unit(c(0,1,0,0), "cm")); grid.arrange(relu_plot, sigmoid_plot, swish_plot, ncol = 3)
+
+#

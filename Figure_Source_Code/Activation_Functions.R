@@ -1,7 +1,7 @@
 # R Code by Lloyd A. Courtenay. Last Updated 10/02/2021
 # R Code for plotting ReLU, Sigmoid and Swish activation functions alongside their derivatives
 
-# Necessary libraries ----------
+# Necessary libraries -----------------------------
 
 library(ggplot2)
 library(gridExtra)

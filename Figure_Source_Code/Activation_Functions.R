@@ -1,4 +1,12 @@
 # R Code by Lloyd A. Courtenay. Last Updated 10/02/2021
+# R Code for plotting ReLU, Sigmoid and Swish activation functions alongside their derivatives
+
+# Necessary libraries ----------
+
+library(ggplot2)
+library(gridExtra)
+
+#
 
 # Activation Functions and their Derivatives ------------------------------
 
@@ -91,9 +99,6 @@ par(mfrow = c(1,1), mar = c(5.1, 4.1, 4.1, 2.1))
 #
 
 # Alternative GGPlot Option ------------------------------
-
-library(ggplot2)
-library(gridExtra)
 
 plot_line_width = 1.25; plot_margin_values = c(0,0.5,0,0); plot_theme<-theme_bw() +
   theme(axis.title = element_text(face = "bold", size = 20),

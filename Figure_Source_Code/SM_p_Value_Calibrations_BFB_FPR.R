@@ -21,8 +21,7 @@ p_BFB<-function(p){
 }
 
 post_odds<-function(p, priors = 0.5){
-  pH = priors/(1-priors)
-  return(0.5 * (BFB(p)*pH))
+  return(priors * BFB(p))
 }
 
 FPR<-function(p, priors = 0.5){

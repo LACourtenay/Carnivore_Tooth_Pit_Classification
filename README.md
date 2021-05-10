@@ -27,7 +27,7 @@ Universidad de Salamanca [USAL]
 This code has been designed for the open-source free R and Python programming languages.
 
 This code was designed and prepared for the study by:
-<b> Courtenay, L.A.; Herranz-Rodrigo, D.; González-Aguilera, D.; Yravedra, J. (Under Revisew) Developments in Data Science Solutions for Carnivore Tooth pit Classification </b>
+<b> Courtenay, L.A.; Herranz-Rodrigo, D.; González-Aguilera, D.; Yravedra, J. (2021) Developments in Data Science Solutions for Carnivore Tooth pit Classification. Scientific Reports. DOI: 10.1038/s41598-021-89518-4 </b>
 
 Some JavaScript code has also been included for free use if others wish to replicate the design of some of the figures included within the main article.
 

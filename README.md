@@ -33,7 +33,7 @@ Some JavaScript code has also been included for free use if others wish to repli
 
 The present repository contains:
 
-* <b> DataSets - For the time being, these files will be made readily accessible upon formal request to the authors; Lloyd A. Courtenay (ladc1995@gmail.com) and José Yravedra (joyravedra@hotmail.com) </b>
+* <b> DataSets </b>
     * Morphologika file containing all landmark coordinates used
     * Nexus file containing phylogenetic data derived from multiple sources (consult main text)
 * <b> Figure_Source_Code </b>

@@ -2,6 +2,17 @@
 # R Code for Augmentation of a Probability Distribution using Markov Chain Monte Carlos
 # An Example for Univariate distributions
 
+# UPDATE 01/2025 -----------------------------------------
+
+# It is important to point out that this code is now out of date, and not entirely function, a more developed and computationally efficient
+# approach to using MCMCs is now available in the library AugmentationMC (https://github.com/LACourtenay/AugmentationMC)
+# published in
+# Courtenay, L.A.; Aramendi, J.; González-Aguilera, D. (2024) Recruiting a Skeleton Crew – Methods for Simulating and Augmenting Palaeoanthropological Data using Monte Carlo based Algorithms
+# American Journal of Biological Anthropology, DOI: 10.1002/ajpa.24754
+# Please refer to this methods to find a better means of implementing the MCMC algorithm
+
+#
+
 # Necessary libraries and functions -----------------------------
 
 # Libraries for data visualization

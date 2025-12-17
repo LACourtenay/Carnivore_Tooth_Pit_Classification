@@ -73,7 +73,7 @@ scientist wishes to improve, contribute, update, report issues or help with this
 This project is licensed under the GNU Affero General Public License v3.0.
 See the LICENSE file for details.
 
-<b> Copyright (C) 2025 Lloyd Courtenay </b>
+<b> Copyright (C) 2021 Lloyd Courtenay </b>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
